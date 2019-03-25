@@ -68,6 +68,7 @@ trait HasOneOrManyMethods
             });
         }
 
+        //fire events by concept
         $this->fireModelRelationshipEvent('saving', $related);
         $this->fireModelRelationshipEvent('updating', $related);
 
